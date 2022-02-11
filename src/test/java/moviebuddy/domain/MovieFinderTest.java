@@ -1,5 +1,6 @@
 package moviebuddy.domain;
 
+import moviebuddy.MovieBuddyFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -12,10 +13,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MovieFinderTest {
     private MovieFinder movieFinder;
+    private MovieBuddyFactory movieBuddyFactory;
 
     @BeforeEach
     void setUp() {
-        movieFinder = new MovieFinder();
+        movieBuddyFactory = new MovieBuddyFactory();
+        movieFinder = movieBuddyFactory.movieFinder();
 
     }
 
