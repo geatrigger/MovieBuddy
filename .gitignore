@@ -33,4 +33,7 @@ out/
 # .gradle
 .gradle/
 
+# .idea
+.idea/
+
 # End of https://www.toptal.com/developers/gitignore/api/java
